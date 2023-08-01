@@ -5,6 +5,13 @@
 @import "tailwindcss/utilities";
 
 :root {
+  --primary: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  --secondary: rgba(255, 255, 255, 0.386);
+
   --black-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
@@ -14,8 +21,27 @@
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
+/* Firefox */
 * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
   scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
 }
 
 .text-gradient {
