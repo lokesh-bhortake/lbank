@@ -2,9 +2,7 @@
 
 [LBANK](https://lbank.netlify.app/) is a landing page project for a bank, built using Tailwind CSS, React, and Vite.
 
-<video controls>
-  <source src="demo_lbank.mp4" type="video/mp4">
-</video>
+![LBank - Bank Landing Page](demo_lbank.gif)
 
 ## Table of Contents
 - [Introduction](#introduction)
